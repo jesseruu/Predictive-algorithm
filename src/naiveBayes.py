@@ -24,12 +24,12 @@ def naive_bayes():
     precision_test = accuracy_score(y_test, y_pred)
     precision_train = accuracy_score(y_train, y_pred_train)
     
-    print("=========================================================")
-    print("Naive Bayes")
-    print("=========================================================")
-    print("Precision en la data de entrenamiento:", precision_train)
-    print("Precision en la data de prueba:", precision_test)
-    print("=========================================================")
+    print(" =========================================================")
+    print(" Naive Bayes")
+    print(" =========================================================")
+    print(" Precision en la data de entrenamiento:", precision_train)
+    print(" Precision en la data de prueba:", precision_test)
+    print(" =========================================================")
 
 if __name__ == "__main__":
     naive_bayes()

@@ -11,16 +11,16 @@ def main():
 
     while (opcion != '7'):
 
-        print('ALGORITMOS\n')
-        print('1. Logistic Regression')
-        print('2. Nearest Neighbor')
-        print('3. Support Vector Machines ')
-        print('4. Naive Bayes')
-        print('5. Decision Tree Algorithm')
-        print('6. Random Forest Classification')
-        print('7. Salir\n')
+        print(' ALGORITMOS\n')
+        print(' 1. Logistic Regression')
+        print(' 2. Nearest Neighbor')
+        print(' 3. Support Vector Machines ')
+        print(' 4. Naive Bayes')
+        print(' 5. Decision Tree Algorithm')
+        print(' 6. Random Forest Classification')
+        print(' 7. Salir\n')
 
-        opcion = input('Digite una opción: ')
+        opcion = input(' Digite una opción: ')
 
         if opcion == '1':
             logisticRegression.train_logist()
@@ -41,11 +41,11 @@ def main():
             randomForest.random_forestC()
        
         elif opcion == '7':
-            print('Saliendo...')
+            print(' Saliendo...')
             sleep(1)
             
         else:
-            print("Digite una opcion valida")
+            print(" Digite una opcion valida")
 
 if __name__ == "__main__":
     main()

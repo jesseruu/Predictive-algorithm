@@ -25,12 +25,12 @@ def neigh_neigbors():
     precision_test = accuracy_score(y_test, y_pred)
     precision_train = accuracy_score(y_train, y_pred_train)
     
-    print("=========================================================")
-    print("Nearest Neigbor")
-    print("=========================================================")
-    print("Precision en la data de entrenamiento:", precision_train)
-    print("Precision en la data de prueba:", precision_test)
-    print("=========================================================")
+    print(" =========================================================")
+    print(" Nearest Neigbor")
+    print(" =========================================================")
+    print(" Precision en la data de entrenamiento:", precision_train)
+    print(" Precision en la data de prueba:", precision_test)
+    print(" =========================================================")
 
 if __name__ == "__main__":
     neigh_neigbors()
