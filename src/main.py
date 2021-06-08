@@ -1,11 +1,14 @@
-from algoritmos import algoritmos_supervisados
 from time import sleep
-
-def importar_dataset():
-    pass
+import logisticRegression
+import nearestNeigbor
+import supportVectorMachine
+import naiveBayes
+import randomForest
+import decisionTree
 
 def main():
     opcion = ''
+
     while (opcion != '7'):
 
         print('ALGORITMOS')
@@ -20,20 +23,27 @@ def main():
         opcion = input('Digite una opción:')
 
         if opcion == '1':
-            algoritmos_supervisados.logistic_regression()
+            logisticRegression.train_logist()
+
         elif opcion == '2':
-            algoritmos_supervisados.nearest_neighbor()
+            nearestNeigbor.neigh_neigbors()
+
         elif opcion == '3':
-            algoritmos_supervisados.support_vector_machine()
+            supportVectorMachine.support_vectoM()
+
         elif opcion == '4':
-            algoritmos_supervisados.naive_bayes()
+            naiveBayes.naive_bayes()
+
         elif opcion == '5':
-            algoritmos_supervisados.decision_tree()
+            decisionTree.decision_tree()
+
         elif opcion == '6':
-            algoritmos_supervisados.random_forest_classification()
+            randomForest.random_forestC()
+       
         elif opcion == '7':
             print('Saliendo...')
-            sleep(2)
+            sleep(1)
+            
         else:
             print("Digite una opcion valida")
 
