@@ -20,9 +20,17 @@ def neigh_neigbors():
     Kneigh_neigbors.fit(X_train, y_train)
 
     y_pred = Kneigh_neigbors.predict(X_test)
-    precision = accuracy_score(y_test, y_pred)
-   
-    print("La precision del modelo es:", precision)
+    y_pred_train = Kneigh_neigbors.predict(X_train)
+
+    precision_test = accuracy_score(y_test, y_pred)
+    precision_train = accuracy_score(y_train, y_pred_train)
+    
+    print("=========================================================")
+    print("Nearest Neigbor")
+    print("=========================================================")
+    print("Precision en la data de entrenamiento:", precision_train)
+    print("Precision en la data de prueba:", precision_test)
+    print("=========================================================")
 
 if __name__ == "__main__":
     neigh_neigbors()

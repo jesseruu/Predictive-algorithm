@@ -23,9 +23,17 @@ def train_logist():
     logistR.fit(X_trainE, y_train)
 
     y_pred = logistR.predict(X_testE)
-    precision = accuracy_score(y_test, y_pred)
+    y_pred_train = logistR.predict(X_trainE)
 
-    print("La precision del modelo es:", precision)
+    precision_test = accuracy_score(y_test, y_pred)
+    precision_train = accuracy_score(y_train, y_pred_train)
+
+    print("=========================================================")
+    print("Regresion Logistica")
+    print("=========================================================")
+    print("Precision en la data de entrenamiento:", precision_train)
+    print("Precision en la data de prueba:", precision_test)
+    print("=========================================================")
 
 if __name__ == "__main__":
     train_logist()

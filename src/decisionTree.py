@@ -19,9 +19,17 @@ def decision_tree():
     decisionTC.fit(X_train, y_train)
 
     y_pred = decisionTC.predict(X_test)
-    precision = accuracy_score(y_test, y_pred)
+    y_pred_train = decisionTC.predict(X_train)
+
+    precision_test = accuracy_score(y_test, y_pred)
+    precision_train = accuracy_score(y_train, y_pred_train)
     
-    print("La precision del modelo es:", precision)
+    print("=========================================================")
+    print("Decision Tree Classification")
+    print("=========================================================")
+    print("Precision en la data de entrenamiento:", precision_train)
+    print("Precision en la data de prueba:", precision_test)
+    print("=========================================================")
 
 if __name__ == "__main__":
     decision_tree()

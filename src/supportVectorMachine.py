@@ -20,10 +20,17 @@ def support_vectoM():
     supporV.fit(X_train, y_train)
 
     y_pred = supporV.predict(X_test)
-    precision = accuracy_score(y_test, y_pred)
-   
-    print("La precision del modelo es:", precision)
+    y_pred_train = supporV.predict(X_train)
+
+    precision_test = accuracy_score(y_test, y_pred)
+    precision_train = accuracy_score(y_train, y_pred_train)
     
+    print("=========================================================")
+    print("Support Vector Machine")
+    print("=========================================================")
+    print("Precision en la data de entrenamiento:", precision_train)
+    print("Precision en la data de prueba:", precision_test)
+    print("=========================================================")
 
 if __name__ == "__main__":
     support_vectoM()
