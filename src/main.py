@@ -11,16 +11,16 @@ def main():
 
     while (opcion != '7'):
 
-        print('ALGORITMOS')
+        print('ALGORITMOS\n')
         print('1. Logistic Regression')
         print('2. Nearest Neighbor')
         print('3. Support Vector Machines ')
         print('4. Naive Bayes')
         print('5. Decision Tree Algorithm')
         print('6. Random Forest Classification')
-        print('7. Salir')
+        print('7. Salir\n')
 
-        opcion = input('Digite una opción:')
+        opcion = input('Digite una opción: ')
 
         if opcion == '1':
             logisticRegression.train_logist()
